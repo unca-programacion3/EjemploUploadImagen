@@ -5,4 +5,7 @@ class Imagen {
     String nombre
     static constraints = {
     }
+    static mapping = {
+            imagen sqlType: 'longblob' 
+    }
 }

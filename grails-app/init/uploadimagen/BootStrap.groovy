@@ -1,3 +1,5 @@
+package uploadimagen
+
 class BootStrap {
 
     def init = { servletContext ->
