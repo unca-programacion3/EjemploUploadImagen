@@ -6,9 +6,9 @@ class GestionarImagenController {
        redirect action:"cargar" 
     }
     def cargar(){
-        
+        render(view:'cargar')
     }
-    def grabar={
+    def grabar(){
         def file = request.getFile('myFile')
         def img = new Imagen(imagen:file,nombre:params.nombre).save(flush:true)
         img.save(flush:true)
@@ -19,7 +19,7 @@ class GestionarImagenController {
         }
         redirect action:"mostrar", params: [id: img.id]
     }
-    def mostrar={
+    def mostrar(){
     }
     def verImagen = {
       def img = Imagen.get(params.id)      
