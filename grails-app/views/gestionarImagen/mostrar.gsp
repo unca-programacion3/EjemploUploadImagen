@@ -14,7 +14,7 @@
     <body>
         <h1>Imagen cargada</h1>
 
-        <img  src=${createLink(controller:"GestionarImagen", action:"verImagen", id:"${params.id}")} width=’300′ />
+        <img  src=${createLink(controller:"GestionarImagen", action:"verImagen", id:"${params.id}")} width='300' />
 
     </body>
 </html>
