@@ -6,6 +6,6 @@ class Imagen {
     static constraints = {
     }
     static mapping = {
-            imagen sqlType: 'longblob' 
+            imagen sqlType: 'bytea' 
     }
 }
